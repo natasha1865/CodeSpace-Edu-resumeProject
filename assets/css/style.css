@@ -1,0 +1,182 @@
+/**
+    Main styles
+*/
+body, html 
+{
+    height: 100%;
+    font-family: "Lato", sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+/**
+    Navbar styles
+*/
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+.overlay {
+    z-index: 1;
+}
+  
+/**
+    Background image
+*/
+.bg-img {
+    background-image: url("../images/person-on-a-bridge-near-a-lake-747964.jpg");
+    height: 100vh;
+}
+.bg-img {
+    position: relative;
+    opacity: 0.65;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/**
+    Landing Page Content
+*/
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption h1 span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+/**
+* Portfolio Section
+*/
+.btn-group-lg>.btn, .btn-lg {
+    border-radius: unset;
+}
+
+.btn-outline-dark:focus,
+button.active:focus {
+    box-shadow: none !important;
+}
+
+.btn-outline-dark:hover {
+    color: #343a40;
+    background-color: #e3e6eb;
+    border-color: #343a40;
+}
+
+#portfolio-section .container {
+    overflow: hidden;
+}
+
+div#backend img:hover,
+div#frontend img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hide it from of the face of the Earth */
+div#backend {
+    position: relative;
+    left: -1141px;
+    transition: 1s;
+}
+div#frontend {
+    position: relative;
+    right: -1141px;
+    transition: 1s;
+}/* End of hidden divs off the face of the Earth */
+
+/* Display hidden divs: from the face of the Earth */
+.show-backend {
+    left: 0px!important;
+    transition: 1s;
+}
+.show-frontend {
+    right: 0px!important;
+    transition: 1s;
+}/* End of display of hidden divs */
+
+/**
+    Cards styling
+*/
+.skills-card{
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+/**
+    Referrals Section
+*/
+.author-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+
+
+/**
+    Contact Form Section
+*/
+.contact-form{
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+
+.darkish{
+    background-color: #111;
+    opacity: 0.8;
+    padding: 18px;
+}
+
+.darkish:hover{
+    background-color: #000;
+    border-color: #000;
+}
+
+/**
+    Mobile Devsices styling
+*/
+@media only screen and (max-width: 425px) {
+    .caption h1 span.border {
+      font-size: small;
+    }
+}
+
+/**
+    Edit the Lightbox plugin default styling
+*/
+a#lg-download {
+    display: none;
+}
+
+button.lg-fullscreen.lg-icon {
+    display: none;
+}
+
+/**
+    Scroll Top Button
+*/
+#scroll-top {
+    display: none;
+    position: fixed;
+    border: none;
+    right: 15px;
+    bottom: 15px;
+}
